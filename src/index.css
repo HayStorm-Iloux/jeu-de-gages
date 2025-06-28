@@ -1,1 +1,6 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+.cartoon-font {
+  font-family: "Fredoka", "Comic Sans MS", "Marker Felt", "Bradley Hand", "Chalkduster", cursive;
+}

@@ -147,6 +147,14 @@ const GageApp: React.FC = () => {
               </button>
             ))}
           </div>
+          
+          <div className="mt-3 text-lg font-bold" style={{
+            fontFamily: 'Comic Sans MS, cursive',
+            color: '#ADB6C4',
+            textShadow: '2px 2px 0px #001B2E'
+          }}>
+            Premier à {targetScore} points gagne !
+          </div>
         </div>
       </div>
 
@@ -176,8 +184,7 @@ const GageApp: React.FC = () => {
                 backfaceVisibility: 'hidden'
               }}
             >
-              <h2 className="text-5xl font-black transform rotate-2" style={{
-                fontFamily: 'Comic Sans MS, cursive',
+              <h2 className="text-5xl font-black transform rotate-2 cartoon-font" style={{
                 color: '#FFC49B',
                 textShadow: '4px 4px 0px #001B2E, 8px 8px 0px #ADB6C4'
               }}>
@@ -196,8 +203,7 @@ const GageApp: React.FC = () => {
                 transform: 'rotateY(180deg)'
               }}
             >
-              <p className="text-xl font-black text-center transform -rotate-1" style={{
-                fontFamily: 'Comic Sans MS, cursive',
+              <p className="text-xl font-black text-center transform -rotate-1 cartoon-font" style={{
                 color: '#001B2E',
                 textShadow: '2px 2px 0px #FFEFD3',
                 lineHeight: '1.3'
@@ -241,7 +247,7 @@ const GageApp: React.FC = () => {
 
             <button
               onClick={handleGoToQuestions}
-              className="font-black py-4 px-6 mx-6 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6"
+              className="font-black py-4 px-6 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6"
               style={{
                 fontFamily: 'Comic Sans MS, cursive',
                 backgroundColor: '#294C60',
@@ -270,9 +276,8 @@ const GageApp: React.FC = () => {
       {/* Bouton retour */}
       <button
         onClick={handleBackToSetup}
-        className="font-black py-3 px-8 rounded-3xl text-lg transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-4"
+        className="font-black py-3 px-8 rounded-3xl text-lg transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-4 cartoon-font"
         style={{
-          fontFamily: 'Comic Sans MS, cursive',
           backgroundColor: '#FFC49B',
           color: '#001B2E',
           borderColor: '#294C60',

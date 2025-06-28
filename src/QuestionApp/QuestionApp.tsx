@@ -140,8 +140,7 @@ const QuestionApp: React.FC = () => {
       <div className="flex justify-between items-center mb-8">
         {/* Score Joueur 1 */}
         <div className="text-center">
-          <div className="text-2xl font-black mb-2" style={{
-            fontFamily: 'Comic Sans MS, cursive',
+          <div className="cartoon-font text-2xl font-black mb-2" style={{
             color: '#FFEFD3',
             textShadow: '2px 2px 0px #294C60'
           }}>
@@ -152,15 +151,13 @@ const QuestionApp: React.FC = () => {
             borderColor: '#294C60',
             boxShadow: '6px 6px 0px #ADB6C4'
           }}>
-            <span className="text-3xl font-black" style={{
-              fontFamily: 'Comic Sans MS, cursive',
+            <span className="cartoon-font text-3xl font-black" style={{
               color: '#001B2E',
               textShadow: '2px 2px 0px #FFEFD3'
             }}>
               {player1Score}
             </span>
-            <span className="text-sm font-bold" style={{
-              fontFamily: 'Comic Sans MS, cursive',
+            <span className="cartoon-font text-sm font-bold" style={{
               color: '#001B2E',
               textShadow: '1px 1px 0px #FFEFD3'
             }}>
@@ -171,8 +168,7 @@ const QuestionApp: React.FC = () => {
 
         {/* Titre central */}
         <div className="text-center">
-          <h1 className="text-5xl font-black transform -rotate-1" style={{
-            fontFamily: 'Comic Sans MS, cursive',
+          <h1 className="cartoon-font text-5xl font-black transform -rotate-1" style={{
             color: '#FFC49B',
             textShadow: '4px 4px 0px #294C60, 8px 8px 0px #001B2E'
           }}>
@@ -182,8 +178,7 @@ const QuestionApp: React.FC = () => {
 
         {/* Score Joueur 2 */}
         <div className="text-center">
-          <div className="text-2xl font-black mb-2" style={{
-            fontFamily: 'Comic Sans MS, cursive',
+          <div className="cartoon-font text-2xl font-black mb-2" style={{
             color: '#FFEFD3',
             textShadow: '2px 2px 0px #294C60'
           }}>
@@ -194,15 +189,13 @@ const QuestionApp: React.FC = () => {
             borderColor: '#294C60',
             boxShadow: '6px 6px 0px #ADB6C4'
           }}>
-            <span className="text-3xl font-black" style={{
-              fontFamily: 'Comic Sans MS, cursive',
+            <span className="cartoon-font text-3xl font-black" style={{
               color: '#001B2E',
               textShadow: '2px 2px 0px #FFEFD3'
             }}>
               {player2Score}
             </span>
-            <span className="text-sm font-bold" style={{
-              fontFamily: 'Comic Sans MS, cursive',
+            <span className="cartoon-font text-sm font-bold" style={{
               color: '#001B2E',
               textShadow: '1px 1px 0px #FFEFD3'
             }}>
@@ -219,8 +212,7 @@ const QuestionApp: React.FC = () => {
           {/* Affichage de la catégorie et de la question (visible sauf en fin de partie) */}
           {gameStep !== 'gameOver' && (
             <div className="text-center mb-8">
-              <div className="text-xl font-black mb-4 px-6 py-3 rounded-2xl border-4 inline-block" style={{
-                fontFamily: 'Comic Sans MS, cursive',
+              <div className="cartoon-font text-xl font-black mb-4 px-6 py-3 rounded-2xl border-4 inline-block" style={{
                 backgroundColor: '#294C60',
                 color: '#FFC49B',
                 borderColor: '#FFC49B',
@@ -230,8 +222,7 @@ const QuestionApp: React.FC = () => {
                 {currentQuestion?.category || 'Catégorie'}
               </div>
               
-              <div className="text-3xl font-black mt-6 px-8 py-6 rounded-3xl border-8" style={{
-                fontFamily: 'Comic Sans MS, cursive',
+              <div className="cartoon-font text-3xl font-black mt-6 px-8 py-6 rounded-3xl border-8" style={{
                 backgroundColor: '#FFC49B',
                 color: '#001B2E',
                 borderColor: '#294C60',
@@ -243,8 +234,7 @@ const QuestionApp: React.FC = () => {
               </div>
 
               {/* Indication du joueur ciblé */}
-              <div className="mt-4 text-lg font-bold px-4 py-2 rounded-xl inline-block" style={{
-                fontFamily: 'Comic Sans MS, cursive',
+              <div className="cartoon-font mt-4 text-lg font-bold px-4 py-2 rounded-xl inline-block" style={{
                 backgroundColor: '#FFEFD3',
                 color: '#001B2E',
                 textShadow: '1px 1px 0px #ADB6C4'
@@ -257,8 +247,7 @@ const QuestionApp: React.FC = () => {
           {/* Étape: Réponse Joueur 1 */}
           {gameStep === 'player1' && (
             <div className="text-center">
-              <h2 className="text-4xl font-black mb-6 transform rotate-1" style={{
-                fontFamily: 'Comic Sans MS, cursive',
+              <h2 className="cartoon-font text-4xl font-black mb-6 transform rotate-1" style={{
                 color: '#FFEFD3',
                 textShadow: '4px 4px 0px #294C60'
               }}>
@@ -271,9 +260,8 @@ const QuestionApp: React.FC = () => {
                   value={player1Answer}
                   onChange={(e) => setPlayer1Answer(e.target.value)}
                   placeholder="Ta réponse ici..."
-                  className="w-full px-6 py-4 rounded-2xl text-center font-black text-xl border-6 focus:outline-none focus:ring-4"
+                  className="cartoon-font w-full px-6 py-4 rounded-2xl text-center font-black text-xl border-6 focus:outline-none focus:ring-4"
                   style={{
-                    fontFamily: 'Comic Sans MS, cursive',
                     backgroundColor: '#FFEFD3',
                     color: '#001B2E',
                     borderColor: '#FFC49B',
@@ -286,9 +274,8 @@ const QuestionApp: React.FC = () => {
                 <button
                   onClick={nextStep}
                   disabled={!player1Answer.trim()}
-                  className="font-black py-4 px-8 rounded-2xl text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="cartoon-font font-black py-4 px-8 rounded-2xl text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6 disabled:opacity-50 disabled:cursor-not-allowed"
                   style={{
-                    fontFamily: 'Comic Sans MS, cursive',
                     backgroundColor: player1Answer.trim() ? '#FFC49B' : '#ADB6C4',
                     color: '#001B2E',
                     borderColor: player1Answer.trim() ? '#294C60' : '#294C60',
@@ -305,16 +292,14 @@ const QuestionApp: React.FC = () => {
           {/* Étape: Réponse Joueur 2 */}
           {gameStep === 'player2' && (
             <div className="text-center">
-              <h2 className="text-4xl font-black mb-6 transform -rotate-1" style={{
-                fontFamily: 'Comic Sans MS, cursive',
+              <h2 className="cartoon-font text-4xl font-black mb-6 transform -rotate-1" style={{
                 color: '#FFEFD3',
                 textShadow: '4px 4px 0px #294C60'
               }}>
                 {player2Name}, à toi !
               </h2>
               
-              <div className="mb-4 text-lg font-bold" style={{
-                fontFamily: 'Comic Sans MS, cursive',
+              <div className="cartoon-font mb-4 text-lg font-bold" style={{
                 color: '#FFC49B',
                 textShadow: '2px 2px 0px #001B2E'
               }}>
@@ -327,9 +312,8 @@ const QuestionApp: React.FC = () => {
                   value={player2Answer}
                   onChange={(e) => setPlayer2Answer(e.target.value)}
                   placeholder="Ta réponse ici..."
-                  className="w-full px-6 py-4 rounded-2xl text-center font-black text-xl border-6 focus:outline-none focus:ring-4"
+                  className="cartoon-font w-full px-6 py-4 rounded-2xl text-center font-black text-xl border-6 focus:outline-none focus:ring-4"
                   style={{
-                    fontFamily: 'Comic Sans MS, cursive',
                     backgroundColor: '#FFEFD3',
                     color: '#001B2E',
                     borderColor: '#FFC49B',
@@ -342,9 +326,8 @@ const QuestionApp: React.FC = () => {
                 <button
                   onClick={nextStep}
                   disabled={!player2Answer.trim()}
-                  className="font-black py-4 px-8 rounded-2xl text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="cartoon-font font-black py-4 px-8 rounded-2xl text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6 disabled:opacity-50 disabled:cursor-not-allowed"
                   style={{
-                    fontFamily: 'Comic Sans MS, cursive',
                     backgroundColor: player2Answer.trim() ? '#FFC49B' : '#ADB6C4',
                     color: '#001B2E',
                     borderColor: player2Answer.trim() ? '#294C60' : '#294C60',
@@ -361,8 +344,7 @@ const QuestionApp: React.FC = () => {
           {/* Étape: Comparaison des réponses */}
           {gameStep === 'comparison' && (
             <div className="text-center">
-              <h2 className="text-4xl font-black mb-8 transform rotate-1" style={{
-                fontFamily: 'Comic Sans MS, cursive',
+              <h2 className="cartoon-font text-4xl font-black mb-8 transform rotate-1" style={{
                 color: '#FFEFD3',
                 textShadow: '4px 4px 0px #294C60'
               }}>
@@ -376,15 +358,13 @@ const QuestionApp: React.FC = () => {
                   borderColor: '#FFC49B',
                   boxShadow: '8px 8px 0px #ADB6C4'
                 }}>
-                  <div className="text-lg font-black mb-2" style={{
-                    fontFamily: 'Comic Sans MS, cursive',
+                  <div className="cartoon-font text-lg font-black mb-2" style={{
                     color: '#FFC49B',
                     textShadow: '2px 2px 0px #001B2E'
                   }}>
                     {player1Name} :
                   </div>
-                  <div className="text-xl font-bold" style={{
-                    fontFamily: 'Comic Sans MS, cursive',
+                  <div className="cartoon-font text-xl font-bold" style={{
                     color: '#FFEFD3',
                     textShadow: '2px 2px 0px #001B2E'
                   }}>
@@ -398,15 +378,13 @@ const QuestionApp: React.FC = () => {
                   borderColor: '#FFC49B',
                   boxShadow: '8px 8px 0px #ADB6C4'
                 }}>
-                  <div className="text-lg font-black mb-2" style={{
-                    fontFamily: 'Comic Sans MS, cursive',
+                  <div className="cartoon-font text-lg font-black mb-2" style={{
                     color: '#FFC49B',
                     textShadow: '2px 2px 0px #001B2E'
                   }}>
                     {player2Name} :
                   </div>
-                  <div className="text-xl font-bold" style={{
-                    fontFamily: 'Comic Sans MS, cursive',
+                  <div className="cartoon-font text-xl font-bold" style={{
                     color: '#FFEFD3',
                     textShadow: '2px 2px 0px #001B2E'
                   }}>
@@ -417,8 +395,7 @@ const QuestionApp: React.FC = () => {
               
               {/* Boutons de scoring */}
               <div className="space-y-4">
-                <div className="text-2xl font-black mb-4" style={{
-                  fontFamily: 'Comic Sans MS, cursive',
+                <div className="cartoon-font text-2xl font-black mb-4" style={{
                   color: '#FFC49B',
                   textShadow: '3px 3px 0px #001B2E'
                 }}>
@@ -428,9 +405,8 @@ const QuestionApp: React.FC = () => {
                 <div className="flex gap-4 justify-center">
                   <button
                     onClick={() => givePoint('player1')}
-                    className="font-black py-3 px-6 rounded-2xl text-lg transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-4"
+                    className="cartoon-font font-black py-3 px-6 rounded-2xl text-lg transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-4"
                     style={{
-                      fontFamily: 'Comic Sans MS, cursive',
                       backgroundColor: '#FFC49B',
                       color: '#001B2E',
                       borderColor: '#294C60',
@@ -443,9 +419,8 @@ const QuestionApp: React.FC = () => {
                   
                   <button
                     onClick={() => givePoint('player2')}
-                    className="font-black py-3 px-6 rounded-2xl text-lg transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-4"
+                    className="cartoon-font font-black py-3 px-6 rounded-2xl text-lg transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-4"
                     style={{
-                      fontFamily: 'Comic Sans MS, cursive',
                       backgroundColor: '#FFC49B',
                       color: '#001B2E',
                       borderColor: '#294C60',
@@ -458,9 +433,8 @@ const QuestionApp: React.FC = () => {
                   
                   <button
                     onClick={newQuestion}
-                    className="font-black py-3 px-6 rounded-2xl text-lg transition-all duration-300 transform hover:scale-110 border-4"
+                    className="cartoon-font font-black py-3 px-6 rounded-2xl text-lg transition-all duration-300 transform hover:scale-110 border-4"
                     style={{
-                      fontFamily: 'Comic Sans MS, cursive',
                       backgroundColor: '#ADB6C4',
                       color: '#001B2E',
                       borderColor: '#294C60',
@@ -478,8 +452,7 @@ const QuestionApp: React.FC = () => {
           {/* Étape: Fin de partie */}
           {gameStep === 'gameOver' && (
             <div className="text-center">
-              <h2 className="text-6xl font-black mb-8 transform rotate-2" style={{
-                fontFamily: 'Comic Sans MS, cursive',
+              <h2 className="cartoon-font text-6xl font-black mb-8 transform rotate-2" style={{
                 color: '#FFC49B',
                 textShadow: '6px 6px 0px #294C60, 12px 12px 0px #001B2E'
               }}>
@@ -488,16 +461,14 @@ const QuestionApp: React.FC = () => {
               
               {/* Affichage du gagnant */}
               <div className="mb-8">
-                <div className="text-4xl font-black mb-4 transform -rotate-1" style={{
-                  fontFamily: 'Comic Sans MS, cursive',
+                <div className="cartoon-font text-4xl font-black mb-4 transform -rotate-1" style={{
                   color: '#FFEFD3',
                   textShadow: '4px 4px 0px #294C60'
                 }}>
                   🏆 GAGNANT : {player1Score >= targetScore ? player1Name : player2Name} ! 🏆
                 </div>
                 
-                <div className="text-2xl font-bold mb-6" style={{
-                  fontFamily: 'Comic Sans MS, cursive',
+                <div className="cartoon-font text-2xl font-bold mb-6" style={{
                   color: '#ADB6C4',
                   textShadow: '2px 2px 0px #001B2E'
                 }}>
@@ -507,8 +478,7 @@ const QuestionApp: React.FC = () => {
               
               {/* Gage pour le perdant */}
               <div className="mb-8">
-                <h3 className="text-3xl font-black mb-4 transform rotate-1" style={{
-                  fontFamily: 'Comic Sans MS, cursive',
+                <h3 className="cartoon-font text-3xl font-black mb-4 transform rotate-1" style={{
                   color: '#FFC49B',
                   textShadow: '3px 3px 0px #001B2E'
                 }}>
@@ -520,8 +490,7 @@ const QuestionApp: React.FC = () => {
                   borderColor: '#294C60',
                   boxShadow: '12px 12px 0px #ADB6C4'
                 }}>
-                  <p className="text-2xl font-black transform -rotate-1" style={{
-                    fontFamily: 'Comic Sans MS, cursive',
+                  <p className="cartoon-font text-2xl font-black transform -rotate-1" style={{
                     color: '#001B2E',
                     textShadow: '3px 3px 0px #FFEFD3',
                     lineHeight: '1.3'
@@ -539,9 +508,8 @@ const QuestionApp: React.FC = () => {
                     setPlayer2Score(0);
                     selectRandomQuestion();
                   }}
-                  className="font-black py-4 px-8 rounded-2xl text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6 mr-4"
+                  className="cartoon-font font-black py-4 px-8 rounded-2xl text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6 mr-4"
                   style={{
-                    fontFamily: 'Comic Sans MS, cursive',
                     backgroundColor: '#FFEFD3',
                     color: '#001B2E',
                     borderColor: '#FFC49B',
@@ -554,9 +522,8 @@ const QuestionApp: React.FC = () => {
                 
                 <button
                   onClick={goBackToGages}
-                  className="font-black py-4 px-8 rounded-2xl text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6"
+                  className="cartoon-font font-black py-4 px-8 rounded-2xl text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6"
                   style={{
-                    fontFamily: 'Comic Sans MS, cursive',
                     backgroundColor: '#294C60',
                     color: '#FFC49B',
                     borderColor: '#FFC49B',
@@ -575,9 +542,8 @@ const QuestionApp: React.FC = () => {
             <div className="text-center mt-8">
               <button
                 onClick={newQuestion}
-                className="font-black py-3 px-6 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 border-4"
+                className="cartoon-font font-black py-3 px-6 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 border-4"
                 style={{
-                  fontFamily: 'Comic Sans MS, cursive',
                   backgroundColor: '#294C60',
                   color: '#FFEFD3',
                   borderColor: '#FFC49B',
