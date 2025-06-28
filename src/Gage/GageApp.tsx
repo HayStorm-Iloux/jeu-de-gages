@@ -86,16 +86,14 @@ const GageApp: React.FC = () => {
     <div className="min-h-screen flex flex-col items-center justify-center p-4" style={{backgroundColor: '#001B2E'}}>
       {/* En-tête */}
       <div className="text-center mb-8">
-        <h1 className="text-6xl font-black mb-6 transform -rotate-1" style={{
-          fontFamily: 'Comic Sans MS, cursive', 
+        <h1 className="text-6xl font-black mb-6 transform cartoon-font -rotate-1" style={{ 
           color: '#FFC49B',
           textShadow: '5px 5px 0px #294C60, 10px 10px 0px #001B2E'
         }}>
           JEU DE GAGES
         </h1>
         
-        <div className="text-2xl font-black mb-4" style={{
-          fontFamily: 'Comic Sans MS, cursive', 
+        <div className="text-2xl font-black mb-4 cartoon-font" style={{
           color: '#FFEFD3',
           textShadow: '3px 3px 0px #294C60'
         }}>
@@ -104,8 +102,7 @@ const GageApp: React.FC = () => {
 
         {/* Sélecteur de score cible */}
         <div className="text-center mt-8">
-          <h3 className="text-2xl font-black mb-4 transform rotate-1" style={{
-            fontFamily: 'Comic Sans MS, cursive',
+          <h3 className="text-2xl font-black mb-4 transform rotate-1 cartoon-font" style={{
             color: '#FFEFD3',
             textShadow: '3px 3px 0px #294C60'
           }}>
@@ -117,11 +114,10 @@ const GageApp: React.FC = () => {
               <button
                 key={score}
                 onClick={() => setTargetScore(score)}
-                className={`font-black py-3 px-6 rounded-2xl text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6 ${
+                className={`font-black cartoon-font py-3 px-6 rounded-2xl text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6 ${
                   targetScore === score ? 'scale-110' : ''
                 }`}
                 style={{
-                  fontFamily: 'Comic Sans MS, cursive',
                   backgroundColor: targetScore === score ? '#FFC49B' : '#294C60',
                   color: targetScore === score ? '#001B2E' : '#FFC49B',
                   borderColor: '#FFC49B',
@@ -148,8 +144,7 @@ const GageApp: React.FC = () => {
             ))}
           </div>
           
-          <div className="mt-3 text-lg font-bold" style={{
-            fontFamily: 'Comic Sans MS, cursive',
+          <div className="mt-3 text-lg font-bold cartoon-font" style={{
             color: '#ADB6C4',
             textShadow: '2px 2px 0px #001B2E'
           }}>
@@ -220,9 +215,8 @@ const GageApp: React.FC = () => {
             <button
               onClick={handleLaunchGage}
               disabled={isAnimating}
-              className="font-black py-4 px-8 rounded-2xl text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="font-black py-4 px-8 cartoon-font rounded-2xl text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6 disabled:opacity-50 disabled:cursor-not-allowed"
               style={{
-                fontFamily: 'Comic Sans MS, cursive',
                 backgroundColor: isAnimating ? '#ADB6C4' : '#FFEFD3',
                 color: '#001B2E',
                 borderColor: '#FFC49B',
@@ -247,9 +241,8 @@ const GageApp: React.FC = () => {
 
             <button
               onClick={handleGoToQuestions}
-              className="font-black py-4 px-6 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6"
+              className="font-black py-4 px-6 cartoon-font rounded-2xl text-2xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6"
               style={{
-                fontFamily: 'Comic Sans MS, cursive',
                 backgroundColor: '#294C60',
                 color: '#FFC49B',
                 borderColor: '#FFC49B',

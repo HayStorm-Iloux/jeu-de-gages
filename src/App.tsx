@@ -167,8 +167,8 @@ const PlayerSetupPage = () => {
                   backgroundColor: player2Name.trim() ? '#FFC49B' : '#ADB6C4',
                   color: '#001B2E',
                   borderColor: player2Name.trim() ? '#FFEFD3' : '#294C60',
-                  textShadow: player2Name.trim() ? '2px 2px 0px #FFEFD3' : '2px 2px 0px #001B2E',
-                  boxShadow: player2Name.trim() ? '8px 8px 0px #ADB6C4' : '4px 4px 0px #294C60'
+                  textShadow: player1Name.trim() ? '2px 2px 0px #FFEFD3' : '2px 2px 0px #FFEFD3',
+                  boxShadow: player1Name.trim() ? '8px 8px 0px #ADB6C4' : '4px 4px 0px #294C60'
                 }}
                 onMouseEnter={(e) => {
                   if (player2Name.trim()) {
