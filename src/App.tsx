@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import GageApp from './Gage/GageApp';
 import QuestionApp from './QuestionApp/QuestionApp';
