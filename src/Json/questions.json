@@ -1,0 +1,231 @@
+{
+    "categories": [
+      {
+        "name": "Goûts & vie quotidienne",
+        "questions": [
+          "Quel est son plat préféré ?",
+          "Quelle est sa boisson alcoolisée préférée ?",
+          "Sucré ou salé ?",
+          "Thé ou café ?",
+          "Son fast food préféré ?",
+          "Quelle est la première chose qu’il/elle fait le matin ?",
+          "Quelle est sa pire habitude ?",
+          "S’il/elle pouvait ne manger qu’un seul aliment toute sa vie, ce serait quoi ?",
+          "Quelle chanson connaît-il/elle par cœur ?",
+          "Quel film regarde-t-il/elle en boucle sans jamais se lasser ?",
+          "Quel est son guilty pleasure niveau bouffe ?",
+          "Quel est son pire cauchemar domestique ?",
+          "Son appli la plus utilisée ?",
+          "Sa commande Starbucks ou bubble tea idéale ?",
+          "Combien de temps passe-t-il/elle sous la douche ?"
+        ]
+      },
+      {
+        "name": "Souvenirs & mémoire",
+        "questions": [
+          "Où s’est déroulé votre premier rendez-vous ?",
+          "Quelle tenue portait-il/elle la première fois que vous vous êtes vus ?",
+          "Quel est le premier film/série que vous avez regardé ensemble ?",
+          "Qu’est-ce qui l’a fait craquer chez toi au début ?",
+          "Quelle est la date de votre anniversaire de couple ?",
+          "Quelle est la plus grosse bêtise que vous ayez faite ensemble ?",
+          "Un souvenir qu’il/elle adore revivre ?",
+          "Quel est le surnom le plus bizarre qu’il/elle t’a donné ?",
+          "Quelle est la première chose qu’il/elle a dite après votre premier bisou ?",
+          "Quelle chanson représente votre couple ?"
+        ]
+      },
+      {
+        "name": "Amour & relation",
+        "questions": [
+          "Qu’est-ce qu’il/elle aime le plus chez toi ?",
+          "Quelle est sa plus grande peur dans une relation ?",
+          "Est-ce qu’il/elle croit au coup de foudre ?",
+          "Plutôt démonstratif ou réservé en amour ?",
+          "Quelle est sa langue de l’amour ?",
+          "Qu’est-ce qu’il/elle trouve sexy chez toi ?",
+          "Plutôt jaloux/jalouse ou chill ?",
+          "Quelle est la chose qu’il/elle ne supporterait pas dans une relation ?",
+          "C’est quoi, pour lui/elle, une preuve d’amour ?",
+          "Quelle est sa définition d’un couple qui dure ?"
+        ]
+      },
+      {
+        "name": "Questions drôles",
+        "questions": [
+          "À quel point est-il/elle de mauvaise humeur quand il/elle a faim ?",
+          "Qui est le plus bordélique entre vous deux ?",
+          "Quelle serait sa stratégie en cas d’apocalypse zombie ?",
+          "Quel est son animal totem ?",
+          "Il/elle peut passer des heures à faire quoi ?",
+          "Dans une dispute, il/elle est plutôt : silencieux/ve, agressif/ve, dramatique, logique ?",
+          "C’est quoi son red flag ?",
+          "Quel personnage de série lui ressemble le plus ?",
+          "Quelle est la chose qu’il/elle ferait même pour 1 million $ ?",
+          "Quelle est la phrase qu’il/elle répète toujours ?"
+        ]
+      },
+      {
+        "name": "Rêves & valeurs",
+        "questions": [
+          "Quel métier rêvait-il/elle de faire enfant ?",
+          "Quelle est sa plus grande ambition ?",
+          "S’il/elle gagnait au loto demain, que ferait-il/elle ?",
+          "Quelle est la destination de rêve qu’il/elle veut absolument visiter ?",
+          "Préfère-t-il/elle la ville ou la campagne ?",
+          "Veut-il/elle des enfants ? Si oui, combien ?",
+          "Quelle est sa plus grande fierté ?",
+          "Quel est son rapport à l’argent ?",
+          "Quel est son plus grand rêve ?",
+          "À quoi ressemblerait sa vie idéale dans 10 ans ?"
+        ]
+      },
+      {
+        "name": "Psychologie & compréhension de l’autre",
+        "questions": [
+          "Quand il/elle ne va pas bien, quel est le signe qui le trahit ?",
+          "Que fait-il/elle quand il/elle est stressé(e) ?",
+          "Dans une soirée, est-ce qu’il/elle parle à tout le monde ou reste dans son coin ?",
+          "Quel est son style de communication dans un conflit ?",
+          "Quelle qualité il/elle admire le plus chez toi ?",
+          "C’est quoi une journée parfaite pour lui/elle ?",
+          "Quel type de film lui fait verser une larme ?",
+          "Quelle est sa plus grande peur (rationnelle ou irrationnelle) ?",
+          "Quelle est sa relation avec sa famille ?",
+          "C’est quoi, pour lui/elle, un bon ami ?"
+        ]
+      },
+      {
+        "name": "Sexe & intimité",
+        "questions": [
+          "Quelle est sa position préférée ?",
+          "Quelle partie de son corps il/elle aime le plus chez lui/elle ?",
+          "Quelle partie de ton corps préfère-t-il/elle ?",
+          "À quel moment de la journée préfère-t-il/elle faire l’amour ?",
+          "Où est l’endroit le plus insolite où il/elle aimerait essayer ?",
+          "A-t-il/elle déjà fait un rêve érotique sur quelqu’un d’autre que toi ?",
+          "Est-ce qu’il/elle a déjà menti sur le nombre de ses partenaires ?",
+          "Quelle est sa plus grosse honte sexuelle ?",
+          "Préfère-t-il/elle la lumière ou le noir total ?",
+          "À quel point est-il/elle ouvert(e) aux expériences ?",
+          "Est-ce qu’il/elle est déjà allé(e) voir du contenu X depuis que vous êtes ensemble ?",
+          "Il/elle est plutôt silencieux(se) ou bruyant(e) ?",
+          "Est-ce qu’il/elle préfère qu’on le/la dirige ou diriger ?",
+          "Quelle est sa plus grande peur au lit ?",
+          "Quel est son fantasme inavoué ?"
+        ]
+      },
+      {
+        "name": "Tricky & sensibles",
+        "questions": [
+          "S’il/elle devait te donner une note en cuisine sur 10 ?",
+          "Est-ce qu’il/elle est déjà allé(e) stalker un(e) ex récemment ?",
+          "Est-ce qu’il/elle pense qu’un ex était meilleur que toi pour quelque chose ?",
+          "Qu’est-ce qui l’énerve vraiment chez toi (mais qu’il/elle n’ose pas dire) ?",
+          "A-t-il/elle déjà eu envie de te larguer ?",
+          "Si vous vous sépariez, qui garderait le chat/le chien ?",
+          "Quelle serait LA chose impardonnable pour lui/elle ?",
+          "Si tu changeais un truc chez lui/elle physiquement ?",
+          "Avec lequel de tes potes/potes à lui/elle il/elle ne te laisserait jamais seul(e) ?",
+          "Est-ce que tu penses qu’il/elle pourrait te tromper un jour ?",
+          "Est-ce qu’il/elle a déjà regardé le tel de l’autre en cachette ?",
+          "Est-ce qu’il/elle ment bien ?",
+          "S’il/elle devait avouer un mensonge qu’il/elle t’a déjà fait, ce serait quoi ?",
+          "Quelle est la chose que tu fais qui lui donne (vraiment) le ick ?",
+          "Quel serait son plan de secours si votre couple explosait ?"
+        ]
+      },
+      {
+        "name": "Humour & moqueries douces",
+        "questions": [
+          "Quelle est la chose la plus bizarre qu’il/elle fasse quand il/elle pense que personne ne le/la regarde ?",
+          "À quel moment il/elle est VRAIMENT pas sexy ?",
+          "Si tu devais le/la comparer à un animal pendant qu’il/elle dort ?",
+          "Son fashion faux pas préféré ?",
+          "S’il/elle devait auditionner pour une télé-réalité, ce serait laquelle ?",
+          "Quel est son plus gros fail de drague ?",
+          "Il/elle ronfle… à quelle intensité ?",
+          "Si c’était un personnage de “Shrek”, ce serait qui ?",
+          "Il/elle a un rire de quoi ?",
+          "Quelle est sa pire imitation ou blague ?"
+        ]
+      },
+      {
+        "name": "Vrai ou Faux",
+        "questions": [
+          "J’aime qu’on m’écrive des messages longs et attentionnés.",
+          "Je peux rester plusieurs jours sans répondre à des messages sans que ça me stresse.",
+          "Je suis plutôt jaloux/jalouse.",
+          "Je crois au coup de foudre.",
+          "Je me projette dans une vie de famille.",
+          "Je préfère dormir collé(e) que de mon côté du lit.",
+          "Je suis plutôt tactile.",
+          "Je déteste qu’on touche à mes affaires.",
+          "Je me rappelle toujours des dates importantes.",
+          "J’ai du mal à dire « je t’aime ».",
+          "J’ai déjà stalké un(e) ex sur les réseaux.",
+          "Je préfère une soirée à deux qu’une grosse soirée entre amis.",
+          "J’ai besoin de moments seul(e), même en couple.",
+          "Je crois que les gens peuvent changer.",
+          "Je me lasserais vite d’une routine trop installée.",
+          "Je suis à l’aise pour parler de sexe.",
+          "J’ai peur d’être quitté(e) sans explication.",
+          "Je crois qu’on peut aimer plusieurs personnes dans une vie.",
+          "Je suis du genre à faire des surprises.",
+          "Je préfère qu’on me dise les choses cash plutôt que de me ménager.",
+          "Je suis à l’aise avec l’idée qu’on ait déjà aimé quelqu’un d’autre avant moi.",
+          "Je pense que tout le monde devrait aller en thérapie au moins une fois.",
+          "Je suis rancunier/rancunière.",
+          "J’ai déjà menti pour éviter un conflit dans le couple.",
+          "Je trouve que c’est important de partager les réseaux sociaux.",
+          "J’ai besoin de me sentir désiré(e) pour être bien dans ma relation.",
+          "Je déteste qu’on me donne des ordres.",
+          "Je pourrais rester ami(e) avec mon/mon ex.",
+          "Je préfère dire la vérité, même si ça fait mal.",
+          "J’ai tendance à surpenser les choses.",
+          "Je suis déjà resté(e) avec quelqu’un par peur d’être seul(e).",
+          "Je suis déjà retourné(e) avec un(e) ex juste pour le sexe.",
+          "Je me suis déjà demandé si je méritais d’être aimé(e).",
+          "Je garde parfois des secrets inutiles juste pour avoir mon jardin secret.",
+          "Je pourrais avoir une relation ouverte.",
+          "Je suis déjà allé(e) voir ailleurs dans ma tête (ou en vrai).",
+          "Je pense que je suis meilleur(e) que mon/ma partenaire au lit.",
+          "J’ai déjà simulé.",
+          "J’ai déjà fantasmé sur quelqu’un d’autre pendant l’acte.",
+          "Je regarde du contenu X en cachette.",
+          "J’ai déjà fouillé dans un téléphone.",
+          "Je juge un peu les ex de mon/ma partenaire.",
+          "Je pourrais coucher avec mon/ma partenaire sans amour.",
+          "Je trouve parfois mon/ma partenaire moins attirant(e).",
+          "Je suis déjà tombé(e) amoureux(se) en étant en couple avec quelqu’un d’autre.",
+          "Je suis plus dominant(e) que je le laisse croire.",
+          "J’ai déjà fantasmé sur une célébrité au point d’en rêver.",
+          "Je me compare aux ex de mon/ma partenaire.",
+          "J’ai déjà regretté d’avoir couché avec quelqu’un juste après l’avoir fait.",
+          "Je me suis déjà demandé si je pouvais faire mieux que mon/ma partenaire.",
+          "J’ai déjà voulu partir sans prévenir.",
+          "Je peux aimer quelqu’un sans vouloir coucher avec lui/elle.",
+          "Je pense parfois que le sexe est trop important dans le couple.",
+          "Je me suis déjà demandé s’il/elle m’aimait vraiment.",
+          "Je n’ai pas toujours été honnête sur mon passé sexuel.",
+          "Je pourrais vivre sans sexe plusieurs mois.",
+          "Je trouve parfois que mon/ma partenaire manque de charme.",
+          "Je pourrais pardonner une infidélité (selon le contexte).",
+          "J’ai déjà utilisé quelqu’un pour oublier une autre personne.",
+          "Je ne me sens pas toujours à la hauteur dans mon couple.",
+          "Je me suis déjà fait ghoster et je ne l’ai jamais oublié.",
+          "Je suis parfois attiré(e) par des gens totalement différents de mon/ma partenaire.",
+          "J’ai déjà menti pendant ce jeu.",
+          "Je suis plus romantique que mon/ma partenaire ne le pense.",
+          "Je peux tomber amoureux(se) très vite.",
+          "Je me suis déjà senti(e) émotionnellement seul(e) dans une relation.",
+          "Je préfère parfois ne pas savoir toute la vérité.",
+          "Je pourrais tout plaquer et partir vivre ailleurs si je n’étais pas en couple.",
+          "Je suis parfois dégoûté(e) du sexe sans raison apparente.",
+          "J’ai déjà gardé contact avec un ancien crush.",
+          "Je suis parfois frustré(e) sexuellement mais je ne le dis pas.",
+          "J’ai déjà pensé à comment je me vengerais en cas de rupture."
+        ]
+      }
+      ]
+  }

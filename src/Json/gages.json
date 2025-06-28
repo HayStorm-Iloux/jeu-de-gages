@@ -1,0 +1,48 @@
+{
+    "gages": [
+      {
+        "type": "drôle",
+        "description": "Des gages fun et absurdes à faire sur le moment.",
+        "items": [
+          "Imite ton/ta partenaire pendant 1 minute.",
+          "Déclare ta flamme en chantant façon opéra dramatique.",
+          "Tu dois faire un massage 10 min.",
+          "Mime votre première rencontre sans parler.",
+          "Fais un selfie ultra moche et envoie-le à l’autre.",
+          "Fais un défilé avec 3 vêtements ridicules.",
+          "Fais une pub gênante pour vanter les qualités de l’autre.",
+          "Raconte votre rencontre version film hollywoodien.",
+          "Fais semblant de découvrir ton/ta partenaire pour la première fois.",
+          "Parle en rimes pendant 2 minutes."
+        ]
+      },
+      {
+        "type": "spicy",
+        "description": "Des gages sexy, flirty et un peu provocateurs, à faire tout de suite.",
+        "items": [
+          "Donne un bisou dans une zone peu classique.",
+          "Chuchote quelque chose de coquin dans son oreille.",
+          "Fais une danse lente ultra séductrice.",
+          "Décris un souvenir chaud que vous avez ensemble.",
+          "Le gagnant peut dessiner sur le corps de l'autre",
+          "Massage express dans la zone que l’autre choisit.",
+          "Fais un compliment sexy sans rire.",
+          "Improvise un scénario de film hot avec vous deux dedans.",
+          "1 minute pour envoyer un sexto à ton/ta partenaire.",
+          "Donne une note sur 10 à la dernière fois… avec argument."
+        ]
+      },
+      {
+        "type": "gênant",
+        "description": "Des gages awkward mais drôles, parfaits entre deux personnes qui se connaissent.",
+        "items": [
+          "Rejoue ta pire tentative de drague.",
+          "Fais une fausse demande en mariage exagérée.",
+          "Avoue une chose pas sexy que tu fais quand t’es seul(e).",
+          "Fais une pub gênante pour un produit intime imaginaire.",
+          "Annonce une fausse nouvelle choquante a un pote (type enceinte).",
+          "Décris ton/ta partenaire comme si tu faisais une critique Google (note incluse)."
+        ]
+      }
+    ]
+}
