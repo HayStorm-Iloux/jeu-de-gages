@@ -143,13 +143,6 @@ const GageApp: React.FC = () => {
               </button>
             ))}
           </div>
-          
-          <div className="mt-3 text-lg font-bold cartoon-font" style={{
-            color: '#ADB6C4',
-            textShadow: '2px 2px 0px #001B2E'
-          }}>
-            Premier à {targetScore} points gagne !
-          </div>
         </div>
       </div>
 
