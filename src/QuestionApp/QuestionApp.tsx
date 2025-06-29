@@ -135,72 +135,147 @@ const QuestionApp: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen p-4" style={{backgroundColor: '#001B2E'}}>
+    <div className="min-h-screen p-3 md:p-4" style={{backgroundColor: '#001B2E'}}>
       {/* Header avec scores */}
-      <div className="flex justify-between items-center mb-8">
-        {/* Score Joueur 1 */}
-        <div className="text-center">
-          <div className="cartoon-font text-2xl font-black mb-2" style={{
-            color: '#FFEFD3',
-            textShadow: '2px 2px 0px #294C60'
-          }}>
-            {player1Name}
+      <div className="mb-8">
+        {/* Version Desktop */}
+        <div className="hidden md:flex justify-between items-center">
+          {/* Score Joueur 1 */}
+          <div className="text-center">
+            <div className="cartoon-font text-2xl font-black mb-2" style={{
+              color: '#FFEFD3',
+              textShadow: '2px 2px 0px #294C60'
+            }}>
+              {player1Name}
+            </div>
+            <div className="w-24 h-24 rounded-2xl border-6 flex flex-col items-center justify-center" style={{
+              backgroundColor: '#FFC49B',
+              borderColor: '#294C60',
+              boxShadow: '6px 6px 0px #ADB6C4'
+            }}>
+              <span className="cartoon-font text-3xl font-black" style={{
+                color: '#001B2E',
+                textShadow: '2px 2px 0px #FFEFD3'
+              }}>
+                {player1Score}
+              </span>
+              <span className="cartoon-font text-sm font-bold" style={{
+                color: '#001B2E',
+                textShadow: '1px 1px 0px #FFEFD3'
+              }}>
+                /{targetScore}
+              </span>
+            </div>
           </div>
-          <div className="w-24 h-24 rounded-2xl border-6 flex flex-col items-center justify-center" style={{
-            backgroundColor: '#FFC49B',
-            borderColor: '#294C60',
-            boxShadow: '6px 6px 0px #ADB6C4'
-          }}>
-            <span className="cartoon-font text-3xl font-black" style={{
-              color: '#001B2E',
-              textShadow: '2px 2px 0px #FFEFD3'
+
+          {/* Titre central */}
+          <div className="text-center">
+            <h1 className="cartoon-font text-5xl font-black transform -rotate-1" style={{
+              color: '#FFC49B',
+              textShadow: '4px 4px 0px #294C60, 8px 8px 0px #001B2E'
             }}>
-              {player1Score}
-            </span>
-            <span className="cartoon-font text-sm font-bold" style={{
-              color: '#001B2E',
-              textShadow: '1px 1px 0px #FFEFD3'
+              QUESTIONS
+            </h1>
+          </div>
+
+          {/* Score Joueur 2 */}
+          <div className="text-center">
+            <div className="cartoon-font text-2xl font-black mb-2" style={{
+              color: '#FFEFD3',
+              textShadow: '2px 2px 0px #294C60'
             }}>
-              /{targetScore}
-            </span>
+              {player2Name}
+            </div>
+            <div className="w-24 h-24 rounded-2xl border-6 flex flex-col items-center justify-center" style={{
+              backgroundColor: '#FFC49B',
+              borderColor: '#294C60',
+              boxShadow: '6px 6px 0px #ADB6C4'
+            }}>
+              <span className="cartoon-font text-3xl font-black" style={{
+                color: '#001B2E',
+                textShadow: '2px 2px 0px #FFEFD3'
+              }}>
+                {player2Score}
+              </span>
+              <span className="cartoon-font text-sm font-bold" style={{
+                color: '#001B2E',
+                textShadow: '1px 1px 0px #FFEFD3'
+              }}>
+                /{targetScore}
+              </span>
+            </div>
           </div>
         </div>
 
-        {/* Titre central */}
-        <div className="text-center">
-          <h1 className="cartoon-font text-5xl font-black transform -rotate-1" style={{
-            color: '#FFC49B',
-            textShadow: '4px 4px 0px #294C60, 8px 8px 0px #001B2E'
-          }}>
-            QUESTIONS
-          </h1>
-        </div>
-
-        {/* Score Joueur 2 */}
-        <div className="text-center">
-          <div className="cartoon-font text-2xl font-black mb-2" style={{
-            color: '#FFEFD3',
-            textShadow: '2px 2px 0px #294C60'
-          }}>
-            {player2Name}
+        {/* Version Mobile */}
+        <div className="md:hidden">
+          {/* Titre en haut */}
+          <div className="text-center mb-6">
+            <h1 className="cartoon-font text-4xl font-black transform -rotate-1" style={{
+              color: '#FFC49B',
+              textShadow: '4px 4px 0px #294C60, 8px 8px 0px #001B2E'
+            }}>
+              QUESTIONS
+            </h1>
           </div>
-          <div className="w-24 h-24 rounded-2xl border-6 flex flex-col items-center justify-center" style={{
-            backgroundColor: '#FFC49B',
-            borderColor: '#294C60',
-            boxShadow: '6px 6px 0px #ADB6C4'
-          }}>
-            <span className="cartoon-font text-3xl font-black" style={{
-              color: '#001B2E',
-              textShadow: '2px 2px 0px #FFEFD3'
-            }}>
-              {player2Score}
-            </span>
-            <span className="cartoon-font text-sm font-bold" style={{
-              color: '#001B2E',
-              textShadow: '1px 1px 0px #FFEFD3'
-            }}>
-              /{targetScore}
-            </span>
+
+          {/* Scores en dessous */}
+          <div className="flex justify-around items-center">
+            {/* Score Joueur 1 */}
+            <div className="text-center">
+              <div className="cartoon-font text-lg font-black mb-2" style={{
+                color: '#FFEFD3',
+                textShadow: '2px 2px 0px #294C60'
+              }}>
+                {player1Name}
+              </div>
+              <div className="w-20 h-20 rounded-2xl border-4 flex flex-col items-center justify-center" style={{
+                backgroundColor: '#FFC49B',
+                borderColor: '#294C60',
+                boxShadow: '4px 4px 0px #ADB6C4'
+              }}>
+                <span className="cartoon-font text-2xl font-black" style={{
+                  color: '#001B2E',
+                  textShadow: '2px 2px 0px #FFEFD3'
+                }}>
+                  {player1Score}
+                </span>
+                <span className="cartoon-font text-xs font-bold" style={{
+                  color: '#001B2E',
+                  textShadow: '1px 1px 0px #FFEFD3'
+                }}>
+                  /{targetScore}
+                </span>
+              </div>
+            </div>
+
+            {/* Score Joueur 2 */}
+            <div className="text-center">
+              <div className="cartoon-font text-lg font-black mb-2" style={{
+                color: '#FFEFD3',
+                textShadow: '2px 2px 0px #294C60'
+              }}>
+                {player2Name}
+              </div>
+              <div className="w-20 h-20 rounded-2xl border-4 flex flex-col items-center justify-center" style={{
+                backgroundColor: '#FFC49B',
+                borderColor: '#294C60',
+                boxShadow: '4px 4px 0px #ADB6C4'
+              }}>
+                <span className="cartoon-font text-2xl font-black" style={{
+                  color: '#001B2E',
+                  textShadow: '2px 2px 0px #FFEFD3'
+                }}>
+                  {player2Score}
+                </span>
+                <span className="cartoon-font text-xs font-bold" style={{
+                  color: '#001B2E',
+                  textShadow: '1px 1px 0px #FFEFD3'
+                }}>
+                  /{targetScore}
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -211,8 +286,8 @@ const QuestionApp: React.FC = () => {
           
           {/* Affichage de la catégorie et de la question (visible sauf en fin de partie) */}
           {gameStep !== 'gameOver' && (
-            <div className="text-center mb-8">
-              <div className="cartoon-font text-xl font-black mb-4 px-6 py-3 rounded-2xl border-4 inline-block" style={{
+            <div className="text-center mb-6 md:mb-8">
+              <div className="cartoon-font text-lg md:text-xl font-black mb-4 px-4 md:px-6 py-2 md:py-3 rounded-2xl border-4 inline-block" style={{
                 backgroundColor: '#294C60',
                 color: '#FFC49B',
                 borderColor: '#FFC49B',
@@ -222,19 +297,19 @@ const QuestionApp: React.FC = () => {
                 {currentQuestion?.category || 'Catégorie'}
               </div>
               
-              <div className="cartoon-font text-3xl font-black mt-6 px-8 py-6 rounded-3xl border-8" style={{
+              <div className="cartoon-font text-xl md:text-3xl font-black mt-4 md:mt-6 px-4 md:px-8 py-4 md:py-6 rounded-3xl border-4 md:border-8" style={{
                 backgroundColor: '#FFC49B',
                 color: '#001B2E',
                 borderColor: '#294C60',
                 textShadow: '3px 3px 0px #FFEFD3',
-                boxShadow: '12px 12px 0px #ADB6C4',
+                boxShadow: '8px 8px 0px #ADB6C4',
                 lineHeight: '1.2'
               }}>
                 {currentQuestion?.text || 'Question en cours de chargement...'}
               </div>
 
               {/* Indication du joueur ciblé */}
-              <div className="cartoon-font mt-4 text-lg font-bold px-4 py-2 rounded-xl inline-block" style={{
+              <div className="cartoon-font mt-3 md:mt-4 text-base md:text-lg font-bold px-3 md:px-4 py-2 rounded-xl inline-block" style={{
                 backgroundColor: '#FFEFD3',
                 color: '#001B2E',
                 textShadow: '1px 1px 0px #ADB6C4'
@@ -247,20 +322,20 @@ const QuestionApp: React.FC = () => {
           {/* Étape: Réponse Joueur 1 */}
           {gameStep === 'player1' && (
             <div className="text-center">
-              <h2 className="cartoon-font text-4xl font-black mb-6 transform rotate-1" style={{
+              <h2 className="cartoon-font text-2xl md:text-4xl font-black mb-4 md:mb-6 transform rotate-1" style={{
                 color: '#FFEFD3',
                 textShadow: '4px 4px 0px #294C60'
               }}>
                 {player1Name}, à toi !
               </h2>
 
-              <div className="space-y-6">
+              <div className="space-y-4 md:space-y-6">
                 <input
                   type="text"
                   value={player1Answer}
                   onChange={(e) => setPlayer1Answer(e.target.value)}
                   placeholder="Ta réponse ici..."
-                  className="cartoon-font w-full px-6 py-4 rounded-2xl text-center font-black text-xl border-6 focus:outline-none focus:ring-4"
+                  className="cartoon-font w-full px-4 md:px-6 py-3 md:py-4 rounded-2xl text-center font-black text-lg md:text-xl border-4 md:border-6 focus:outline-none focus:ring-4"
                   style={{
                     backgroundColor: '#FFEFD3',
                     color: '#001B2E',
@@ -274,7 +349,7 @@ const QuestionApp: React.FC = () => {
                 <button
                   onClick={nextStep}
                   disabled={!player1Answer.trim()}
-                  className="cartoon-font font-black py-4 px-8 rounded-2xl text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="cartoon-font font-black py-3 md:py-4 px-6 md:px-8 rounded-2xl text-lg md:text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-4 md:border-6 disabled:opacity-50 disabled:cursor-not-allowed"
                   style={{
                     backgroundColor: player1Answer.trim() ? '#FFC49B' : '#ADB6C4',
                     color: '#001B2E',
@@ -292,27 +367,27 @@ const QuestionApp: React.FC = () => {
           {/* Étape: Réponse Joueur 2 */}
           {gameStep === 'player2' && (
             <div className="text-center">
-              <h2 className="cartoon-font text-4xl font-black mb-6 transform -rotate-1" style={{
+              <h2 className="cartoon-font text-2xl md:text-4xl font-black mb-4 md:mb-6 transform -rotate-1" style={{
                 color: '#FFEFD3',
                 textShadow: '4px 4px 0px #294C60'
               }}>
                 {player2Name}, à toi !
               </h2>
               
-              <div className="cartoon-font mb-4 text-lg font-bold" style={{
+              <div className="cartoon-font mb-3 md:mb-4 text-base md:text-lg font-bold" style={{
                 color: '#FFC49B',
                 textShadow: '2px 2px 0px #001B2E'
               }}>
                 {player1Name} a donné sa réponse !
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-4 md:space-y-6">
                 <input
                   type="text"
                   value={player2Answer}
                   onChange={(e) => setPlayer2Answer(e.target.value)}
                   placeholder="Ta réponse ici..."
-                  className="cartoon-font w-full px-6 py-4 rounded-2xl text-center font-black text-xl border-6 focus:outline-none focus:ring-4"
+                  className="cartoon-font w-full px-4 md:px-6 py-3 md:py-4 rounded-2xl text-center font-black text-lg md:text-xl border-4 md:border-6 focus:outline-none focus:ring-4"
                   style={{
                     backgroundColor: '#FFEFD3',
                     color: '#001B2E',
@@ -326,7 +401,7 @@ const QuestionApp: React.FC = () => {
                 <button
                   onClick={nextStep}
                   disabled={!player2Answer.trim()}
-                  className="cartoon-font font-black py-4 px-8 rounded-2xl text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="cartoon-font font-black py-3 md:py-4 px-6 md:px-8 rounded-2xl text-lg md:text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-4 md:border-6 disabled:opacity-50 disabled:cursor-not-allowed"
                   style={{
                     backgroundColor: player2Answer.trim() ? '#FFC49B' : '#ADB6C4',
                     color: '#001B2E',
@@ -344,27 +419,27 @@ const QuestionApp: React.FC = () => {
           {/* Étape: Comparaison des réponses */}
           {gameStep === 'comparison' && (
             <div className="text-center">
-              <h2 className="cartoon-font text-4xl font-black mb-8 transform rotate-1" style={{
+              <h2 className="cartoon-font text-2xl md:text-4xl font-black mb-6 md:mb-8 transform rotate-1" style={{
                 color: '#FFEFD3',
                 textShadow: '4px 4px 0px #294C60'
               }}>
                 COMPARAISON !
               </h2>
               
-              <div className="space-y-6 mb-8">
+              <div className="space-y-4 md:space-y-6 mb-6 md:mb-8">
                 {/* Réponse Joueur 1 */}
-                <div className="px-6 py-4 rounded-2xl border-6" style={{
+                <div className="px-4 md:px-6 py-3 md:py-4 rounded-2xl border-4 md:border-6" style={{
                   backgroundColor: '#294C60',
                   borderColor: '#FFC49B',
-                  boxShadow: '8px 8px 0px #ADB6C4'
+                  boxShadow: '6px 6px 0px #ADB6C4'
                 }}>
-                  <div className="cartoon-font text-lg font-black mb-2" style={{
+                  <div className="cartoon-font text-base md:text-lg font-black mb-2" style={{
                     color: '#FFC49B',
                     textShadow: '2px 2px 0px #001B2E'
                   }}>
                     {player1Name} :
                   </div>
-                  <div className="cartoon-font text-xl font-bold" style={{
+                  <div className="cartoon-font text-lg md:text-xl font-bold" style={{
                     color: '#FFEFD3',
                     textShadow: '2px 2px 0px #001B2E'
                   }}>
@@ -373,18 +448,18 @@ const QuestionApp: React.FC = () => {
                 </div>
                 
                 {/* Réponse Joueur 2 */}
-                <div className="px-6 py-4 rounded-2xl border-6" style={{
+                <div className="px-4 md:px-6 py-3 md:py-4 rounded-2xl border-4 md:border-6" style={{
                   backgroundColor: '#294C60',
                   borderColor: '#FFC49B',
-                  boxShadow: '8px 8px 0px #ADB6C4'
+                  boxShadow: '6px 6px 0px #ADB6C4'
                 }}>
-                  <div className="cartoon-font text-lg font-black mb-2" style={{
+                  <div className="cartoon-font text-base md:text-lg font-black mb-2" style={{
                     color: '#FFC49B',
                     textShadow: '2px 2px 0px #001B2E'
                   }}>
                     {player2Name} :
                   </div>
-                  <div className="cartoon-font text-xl font-bold" style={{
+                  <div className="cartoon-font text-lg md:text-xl font-bold" style={{
                     color: '#FFEFD3',
                     textShadow: '2px 2px 0px #001B2E'
                   }}>
@@ -395,17 +470,17 @@ const QuestionApp: React.FC = () => {
               
               {/* Boutons de scoring */}
               <div className="space-y-4">
-                <div className="cartoon-font text-2xl font-black mb-4" style={{
+                <div className="cartoon-font text-xl md:text-2xl font-black mb-4" style={{
                   color: '#FFC49B',
                   textShadow: '3px 3px 0px #001B2E'
                 }}>
                   QUI GAGNE LE POINT ?
                 </div>
                 
-                <div className="flex gap-4 justify-center">
+                <div className="flex flex-col md:flex-row gap-3 md:gap-4 justify-center">
                   <button
                     onClick={() => givePoint('player1')}
-                    className="cartoon-font font-black py-3 px-6 rounded-2xl text-lg transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-4"
+                    className="cartoon-font font-black py-3 px-6 rounded-2xl text-base md:text-lg transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-4"
                     style={{
                       backgroundColor: '#FFC49B',
                       color: '#001B2E',
@@ -419,7 +494,7 @@ const QuestionApp: React.FC = () => {
                   
                   <button
                     onClick={() => givePoint('player2')}
-                    className="cartoon-font font-black py-3 px-6 rounded-2xl text-lg transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-4"
+                    className="cartoon-font font-black py-3 px-6 rounded-2xl text-base md:text-lg transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-4"
                     style={{
                       backgroundColor: '#FFC49B',
                       color: '#001B2E',
@@ -433,7 +508,7 @@ const QuestionApp: React.FC = () => {
                   
                   <button
                     onClick={newQuestion}
-                    className="cartoon-font font-black py-3 px-6 rounded-2xl text-lg transition-all duration-300 transform hover:scale-110 border-4"
+                    className="cartoon-font font-black py-3 px-6 rounded-2xl text-base md:text-lg transition-all duration-300 transform hover:scale-110 border-4"
                     style={{
                       backgroundColor: '#ADB6C4',
                       color: '#001B2E',
@@ -452,7 +527,7 @@ const QuestionApp: React.FC = () => {
           {/* Étape: Fin de partie */}
           {gameStep === 'gameOver' && (
             <div className="text-center">
-              <h2 className="cartoon-font text-6xl font-black mb-8 transform rotate-2" style={{
+              <h2 className="cartoon-font text-3xl md:text-6xl font-black mb-6 md:mb-8 transform rotate-2" style={{
                 color: '#FFC49B',
                 textShadow: '6px 6px 0px #294C60, 12px 12px 0px #001B2E'
               }}>
@@ -460,15 +535,15 @@ const QuestionApp: React.FC = () => {
               </h2>
               
               {/* Affichage du gagnant */}
-              <div className="mb-8">
-                <div className="cartoon-font text-4xl font-black mb-4 transform -rotate-1" style={{
+              <div className="mb-6 md:mb-8">
+                <div className="cartoon-font text-2xl md:text-4xl font-black mb-3 md:mb-4 transform -rotate-1" style={{
                   color: '#FFEFD3',
                   textShadow: '4px 4px 0px #294C60'
                 }}>
                   🏆 GAGNANT : {player1Score >= targetScore ? player1Name : player2Name} ! 🏆
                 </div>
                 
-                <div className="cartoon-font text-2xl font-bold mb-6" style={{
+                <div className="cartoon-font text-lg md:text-2xl font-bold mb-4 md:mb-6" style={{
                   color: '#ADB6C4',
                   textShadow: '2px 2px 0px #001B2E'
                 }}>
@@ -477,20 +552,20 @@ const QuestionApp: React.FC = () => {
               </div>
               
               {/* Gage pour le perdant */}
-              <div className="mb-8">
-                <h3 className="cartoon-font text-3xl font-black mb-4 transform rotate-1" style={{
+              <div className="mb-6 md:mb-8">
+                <h3 className="cartoon-font text-xl md:text-3xl font-black mb-3 md:mb-4 transform rotate-1" style={{
                   color: '#FFC49B',
                   textShadow: '3px 3px 0px #001B2E'
                 }}>
                   GAGE POUR {player1Score >= targetScore ? player2Name : player1Name} :
                 </h3>
                 
-                <div className="px-8 py-6 rounded-3xl border-8 mx-auto max-w-lg" style={{
+                <div className="px-4 md:px-8 py-4 md:py-6 rounded-3xl border-4 md:border-8 mx-auto max-w-sm md:max-w-lg" style={{
                   backgroundColor: '#FFC49B',
                   borderColor: '#294C60',
-                  boxShadow: '12px 12px 0px #ADB6C4'
+                  boxShadow: '8px 8px 0px #ADB6C4'
                 }}>
-                  <p className="cartoon-font text-2xl font-black transform -rotate-1" style={{
+                  <p className="cartoon-font text-lg md:text-2xl font-black transform -rotate-1" style={{
                     color: '#001B2E',
                     textShadow: '3px 3px 0px #FFEFD3',
                     lineHeight: '1.3'
@@ -508,7 +583,7 @@ const QuestionApp: React.FC = () => {
                     setPlayer2Score(0);
                     selectRandomQuestion();
                   }}
-                  className="cartoon-font font-black py-4 px-8 rounded-2xl text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6 mr-4"
+                  className="cartoon-font font-black py-3 md:py-4 px-6 md:px-8 rounded-2xl text-lg md:text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-4 md:border-6 mr-0 md:mr-4 mb-4 md:mb-0"
                   style={{
                     backgroundColor: '#FFEFD3',
                     color: '#001B2E',
@@ -522,7 +597,7 @@ const QuestionApp: React.FC = () => {
                 
                 <button
                   onClick={goBackToGages}
-                  className="cartoon-font font-black py-4 px-8 rounded-2xl text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-6"
+                  className="cartoon-font font-black py-3 md:py-4 px-6 md:px-8 rounded-2xl text-lg md:text-xl transition-all duration-300 transform hover:scale-110 hover:rotate-1 border-4 md:border-6"
                   style={{
                     backgroundColor: '#294C60',
                     color: '#FFC49B',
@@ -539,10 +614,10 @@ const QuestionApp: React.FC = () => {
           
           {/* Bouton nouvelle question (visible sauf en comparaison et fin de partie) */}
           {gameStep !== 'comparison' && gameStep !== 'gameOver' && (
-            <div className="text-center mt-8">
+            <div className="text-center mt-6 md:mt-8">
               <button
                 onClick={newQuestion}
-                className="cartoon-font font-black py-3 px-6 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 border-4"
+                className="cartoon-font font-black py-3 px-6 rounded-2xl text-base md:text-lg transition-all duration-300 transform hover:scale-105 border-4"
                 style={{
                   backgroundColor: '#294C60',
                   color: '#FFEFD3',
