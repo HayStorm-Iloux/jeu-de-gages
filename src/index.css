@@ -1,35 +1,4 @@
 @import "tailwindcss";
-@font-face {
-  font-family: 'Fredoka';
-  src: url('/my-app/public/fonts/Fredoka/static/Fredoka-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Fredoka';
-  src: url('/my-app/public/fonts/Fredoka/static/Fredoka-Regular.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Fredoka';
-  src: url('/my-app/public/fonts/Fredoka/static/Fredoka-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Fredoka';
-  src: url('/my-app/public/fonts/Fredoka/static/Fredoka-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 
 .cartoon-font {
   font-family: "Fredoka", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif !important;
