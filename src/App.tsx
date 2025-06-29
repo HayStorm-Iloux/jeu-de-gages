@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import GageApp from './Gage/GageApp';
+import QuestionApp from './QuestionApp/QuestionApp';
 
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<PlayerSetupPage />} />
       <Route path="/GageApp/:player1/:player2" element={<GageApp />} />
+      <Route path="/GageApp/:player1/:player2/QuestionApp/:targetScore/:currentGage" element={<QuestionApp />} />
     </Routes>
   );
 };
